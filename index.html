@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jembuy Shoes - Toko Sepatu Branded Original & Terpercaya</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                            accent: '#f59e0b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 6px;
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-sky-500/30 group-hover:scale-105 transition-transform">
+                    JS
+                </div>
+                <div>
+                    <span class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-sky-400 bg-clip-text text-transparent">JEMBUY SHOES</span>
+                    <span class="block text-[10px] text-sky-400 font-semibold tracking-wider uppercase -mt-1">Original Branded Footwear</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#home" class="hover:text-sky-400 transition-colors">Beranda</a>
+                <a href="#katalog" class="hover:text-sky-400 transition-colors">Katalog Sepatu</a>
+                <a href="#tabel-detail" class="hover:text-sky-400 transition-colors">Daftar Stok & Harga</a>
+                <a href="#pembayaran" class="hover:text-sky-400 transition-colors">Metode Pembayaran</a>
+                <a href="#kalkulator" class="hover:text-sky-400 transition-colors">Kalkulator Angsuran</a>
+            </nav>
+
+            <!-- CTA Order Fast -->
+            <a href="https://wa.me/6282119796141?text=Halo%20Jembuy%20Shoes,%20saya%20ingin%20bertanya%20mengenai%20stok%20sepatu." 
+               target="_blank" 
+               class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all transform hover:-translate-y-0.5">
+                <i class="fa-brands fa-whatsapp text-lg">="</i>
+                <span>Hubungi WA</span>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-slate-300 hover:text-white p-2 text-xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu Panel -->
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-slate-300 hover:text-sky-400 font-medium">Beranda</a>
+            <a href="#katalog" class="block py-2 text-slate-300 hover:text-sky-400 font-medium">Katalog Sepatu</a>
+            <a href="#tabel-detail" class="block py-2 text-slate-300 hover:text-sky-400 font-medium">Daftar Stok & Harga</a>
+            <a href="#pembayaran" class="block py-2 text-slate-300 hover:text-sky-400 font-medium">Metode Pembayaran</a>
+            <a href="#kalkulator" class="block py-2 text-slate-300 hover:text-sky-400 font-medium">Kalkulator Angsuran</a>
+            <a href="https://wa.me/6282119796141" target="_blank" class="w-full mt-2 flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-500 text-white font-semibold text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Chat via WhatsApp (082119796141)</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-20">
+
+        <!-- HERO SECTION -->
+        <section id="home" class="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6 text-center lg:text-left">
+                        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-semibold tracking-wide uppercase">
+                            <i class="fa-solid fa-certificate"></i> 100% Guaranteed Brand New Original
+                        </span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+                            Tampil Style Berkelas dengan <span class="bg-gradient-to-r from-sky-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent">Sepatu Branded Baru</span>
+                        </h1>
+                        <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal">
+                            Temukan koleksi sepatu sneakers, running, dan casual branded original terkini di **Jembuy Shoes**. Menyediakan opsi bayar **Cash** maupun **Angsuran E-Wallet & Bank**!
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                            <a href="#katalog" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-center shadow-lg shadow-sky-600/30 transition-all hover:scale-105">
+                                Lihat Koleksi Sepatu <i class="fa-solid fa-arrow-down ml-2"></i>
+                            </a>
+                            <a href="#pembayaran" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-center transition-all">
+                                Opsi Cicilan & Pembayaran
+                            </a>
+                        </div>
+
+                        <!-- Stats Banner -->
+                        <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80">
+                            <div>
+                                <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                                <p class="text-xs text-slate-400">Original / Brand New</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl sm:text-3xl font-extrabold text-sky-400">Cash/Cicil</p>
+                                <p class="text-xs text-slate-400">Banyak Opsi Bayar</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl sm:text-3xl font-extrabold text-emerald-400">Fast Order</p>
+                                <p class="text-xs text-slate-400">Langsung Via WA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual Card -->
+                    <div class="relative flex justify-center">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-sky-500 to-indigo-600 rounded-3xl blur-2xl opacity-30 animate-pulse"></div>
+                        <div class="relative bg-slate-900 border border-slate-800 p-6 rounded-3xl w-full max-w-md shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Featured Nike Shoe" 
+                                 class="w-full h-72 object-cover rounded-2xl shadow-md mb-6 hover:scale-105 transition-transform duration-300"
+                                 onerror="this.src='https://placehold.co/600x400/1e293b/38bdf8?text=Jembuy+Shoes+Branded'">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-bold px-3 py-1 rounded-md bg-sky-500/20 text-sky-400 border border-sky-500/30">BEST SELLER</span>
+                                <span class="text-emerald-400 text-sm font-semibold"><i class="fa-solid fa-check-circle"></i> Ready Stock</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Nike Air Max Flyknit 2026</h3>
+                            <p class="text-xs text-slate-400 mt-1">Cushioning Max Air, Upper Flyknit Breathable Lightweight</p>
+                            <div class="mt-4 flex items-center justify-between pt-4 border-t border-slate-800">
+                                <div>
+                                    <span class="text-xs text-slate-500 block">Harga Spesial</span>
+                                    <span class="text-xl font-black text-white">Rp 2.450.000</span>
+                                </div>
+                                <button onclick="openOrderModal('Nike Air Max Flyknit 2026', 'Rp 2.450.000', '40, 41, 42, 43', 'Max Air Cushioning, Ultralight')" class="px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-bold text-sm shadow-md transition-all flex items-center gap-2">
+                                    <i class="fa-brands fa-whatsapp"></i> Beli
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATALOG GRID DISPLAY -->
+        <section id="katalog" class="py-16 bg-slate-900/50 border-t border-b border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl font-extrabold text-white tracking-tight">Katalog Produk Unggulan</h2>
+                    <p class="text-slate-400 mt-2">Pilihan sepatu branded terbaru dengan jaminan kualitas 100% Original BNIB (Brand New In Box)</p>
+                </div>
+
+                <!-- Search & Filter Controls -->
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8 bg-slate-900 p-4 rounded-2xl border border-slate-800">
+                    <div class="relative w-full md:w-96">
+                        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                        <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Cari nama sepatu atau spesifikasi..." class="w-full bg-slate-950 text-white pl-11 pr-4 py-2.5 rounded-xl border border-slate-700 focus:outline-none focus:border-sky-500 text-sm">
+                    </div>
+                    <div class="flex items-center gap-3 w-full md:w-auto overflow-x-auto pb-2 md:pb-0">
+                        <button onclick="filterBrand('all')" class="brand-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-sky-600 text-white whitespace-nowrap">Semua</button>
+                        <button onclick="filterBrand('Nike')" class="brand-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap">Nike</button>
+                        <button onclick="filterBrand('Adidas')" class="brand-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap">Adidas</button>
+                        <button onclick="filterBrand('Jordan')" class="brand-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap">Jordan</button>
+                        <button onclick="filterBrand('New Balance')" class="brand-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap">New Balance</button>
+                        <button onclick="filterBrand('Puma')" class="brand-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap">Puma</button>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Dynamic Product Cards loaded via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- TABLE CATALOG SECTION (DETAILED MODEL, SIZE, PRICE, STOCKS & SPECS) -->
+        <section id="tabel-detail" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+                    <div>
+                        <span class="text-sky-400 font-semibold text-xs uppercase tracking-widest">Informasi Lengkap Inventaris</span>
+                        <h2 class="text-3xl font-extrabold text-white tracking-tight mt-1">Tabel Stok, Ukuran & Spesifikasi</h2>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-2 md:mt-0">Update Stok Realtime | WhatsApp Quick Order</p>
+                </div>
+
+                <!-- Responsive Table Wrapper -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+                    <div class="overflow-x-auto custom-scrollbar">
+                        <table class="w-full text-left text-sm text-slate-300">
+                            <thead class="bg-slate-800/90 text-slate-200 text-xs uppercase tracking-wider border-b border-slate-700">
+                                <tr>
+                                    <th scope="col" class="py-4 px-6 font-bold">No</th>
+                                    <th scope="col" class="py-4 px-6 font-bold">Model Sepatu</th>
+                                    <th scope="col" class="py-4 px-6 font-bold">Spesifikasi Material</th>
+                                    <th scope="col" class="py-4 px-6 font-bold text-center">Ukuran Ready (EU)</th>
+                                    <th scope="col" class="py-4 px-6 font-bold">Harga Cash</th>
+                                    <th scope="col" class="py-4 px-6 font-bold text-center">Stok Available</th>
+                                    <th scope="col" class="py-4 px-6 font-bold text-center">Aksi / Order</th>
+                                </tr>
+                            </thead>
+                            <tbody id="shoesTableBody" class="divide-y divide-slate-800/60">
+                                <!-- Table Content Generated via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAYMENT METHODS SECTION (CASH, ANGSURAN, E-WALLET & BANK TRANSFER) -->
+        <section id="pembayaran" class="py-16 bg-slate-900/40 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="text-sky-400 font-semibold text-xs uppercase tracking-widest">Kemudahan Bertransaksi</span>
+                    <h2 class="text-3xl font-extrabold text-white tracking-tight mt-1">Metode Pembayaran Resmi</h2>
+                    <p class="text-slate-400 mt-2">Pilih metode pembayaran yang paling nyaman untuk Anda. Tersedia fasilitas **Bayar Cash (Tunai/COD)** dan **Angsuran/Cicilan** melalui E-Wallet & Bank.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Cash / COD Payment Card -->
+                    <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl relative group hover:border-emerald-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">1. Cash / Bayar Tunai / COD</h3>
+                        <p class="text-slate-400 text-sm mb-4">Pembayaran lunas di toko atau dengan metode Cash On Delivery (Bayar Saat Barang Sampai di Rumah Anda).</p>
+                        <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Pembayaran Tunai Langsung Store</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> COD Area Tertentu / Kurir Ekspres</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Bebas Biaya Penanganan</li>
+                        </ul>
+                    </div>
+
+                    <!-- E-Wallet & Angsuran / PayLater -->
+                    <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl relative group hover:border-sky-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/30 text-sky-400 flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">2. E-Wallet & Angsuran</h3>
+                        <p class="text-slate-400 text-sm mb-4">Dapat dicicil/diangsur menggunakan layanan PayLater atau saldo instan melalui E-Wallet terkemuka.</p>
+                        
+                        <!-- Logos Badge -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2.5 py-1 bg-slate-800 text-sky-300 rounded font-bold text-xs">DANA</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-purple-400 rounded font-bold text-xs">OVO</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-emerald-400 rounded font-bold text-xs">GoPay</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-orange-400 rounded font-bold text-xs">ShopeePay</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-red-400 rounded font-bold text-xs">LinkAja</span>
+                        </div>
+
+                        <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-400"></i> Support Cicilan E-Wallet (Kredivo, SpayLater, dll)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-400"></i> QRIS Realtime Instant Scan</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-400"></i> Konfirmasi Otomatis</li>
+                        </ul>
+                    </div>
+
+                    <!-- Transfer Bank Card -->
+                    <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl relative group hover:border-indigo-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 flex items-center justify-center text-2xl mb-4">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">3. Transfer Bank / VA</h3>
+                        <p class="text-slate-400 text-sm mb-4">Transfer antar bank nasional utama di Indonesia dengan opsi konfirmasi cepat.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2.5 py-1 bg-slate-800 text-blue-400 rounded font-bold text-xs">BCA</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-sky-400 rounded font-bold text-xs">BRI</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-teal-400 rounded font-bold text-xs">BSI</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-yellow-400 rounded font-bold text-xs">Mandiri</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-orange-400 rounded font-bold text-xs">BNI</span>
+                        </div>
+
+                        <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800 pt-4">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Rekening Atas Nama Toko Resmi</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> M-Banking / ATM / Internet Banking</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Bebas Masalah Keamanan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTALLMENT CALCULATOR INTERACTIVE SECTION -->
+        <section id="kalkulator" class="py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+                    <div class="absolute -right-16 -top-16 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="text-center mb-8">
+                        <span class="text-sky-400 text-xs font-bold uppercase tracking-widest">Simulasi Pembayaran</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Kalkulator Estimasi Angsuran</h2>
+                        <p class="text-slate-400 text-sm mt-1">Hitung simulasi cicilan bulanan untuk sepatu impian Anda melalui opsi E-Wallet PayLater / Angsuran Bank</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <!-- Inputs -->
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Pilih Produk Sepatu</label>
+                                <select id="calcShoeSelect" onchange="updateCalcFromSelect()" class="w-full bg-slate-950 text-white border border-slate-700 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-sky-500">
+                                    <!-- Options filled dynamically -->
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Harga Produk (Rp)</label>
+                                <input type="number" id="calcPriceInput" value="2450000" oninput="calculateInstallment()" class="w-full bg-slate-950 text-white border border-slate-700 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-sky-500">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Pilihan Tenor Angsuran</label>
+                                <select id="calcTenure" onchange="calculateInstallment()" class="w-full bg-slate-950 text-white border border-slate-700 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-sky-500">
+                                    <option value="3">3 Bulan</option>
+                                    <option value="6" selected>6 Bulan</option>
+                                    <option value="12">12 Bulan</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Result Display Card -->
+                        <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 text-center flex flex-col justify-between h-full">
+                            <div>
+                                <span class="text-xs text-slate-400 uppercase font-semibold">Estimasi Angsuran / Bulan</span>
+                                <div class="text-3xl sm:text-4xl font-black text-sky-400 my-3" id="calcMonthlyResult">Rp 435.000</div>
+                                <p class="text-xs text-slate-500">Simulasi ini berdasarkan estimasi bunga flat 1.5%/bulan untuk tenor terpilih.</p>
+                            </div>
+
+                            <div class="mt-6 pt-4 border-t border-slate-800/80">
+                                <button onclick="orderWithInstallment()" class="w-full py-3 bg-sky-600 hover:bg-sky-500 text-white rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp"></i> Ajukan Angsuran via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-sky-600 flex items-center justify-center text-white font-black text-sm">JS</div>
+                        <span class="text-xl font-bold text-white tracking-tight">Jembuy Shoes</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Pusat penjualan sepatu branded baru original terpercaya. Melayani pembelian secara tunai (cash) maupun angsuran mudah via e-wallet dan transfer bank.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-3">Navigasi Cepat</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-sky-400">Beranda</a></li>
+                        <li><a href="#katalog" class="hover:text-sky-400">Katalog Sepatu</a></li>
+                        <li><a href="#tabel-detail" class="hover:text-sky-400">Tabel Stok & Harga</a></li>
+                        <li><a href="#pembayaran" class="hover:text-sky-400">Opsi Pembayaran</a></li>
+                    </ul>
+                </div>
+
+                <!-- Payment Methods Info -->
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-3">Pembayaran</h4>
+                    <p class="text-xs text-slate-400 mb-2">Cash / COD, E-Wallet (DANA, OVO, GoPay, ShopeePay), Transfer Bank (BRI, BCA, BSI, Mandiri).</p>
+                    <div class="flex gap-2 text-lg text-slate-300">
+                        <i class="fa-solid fa-wallet" title="E-Wallet"></i>
+                        <i class="fa-solid fa-building-columns" title="Bank Transfer"></i>
+                        <i class="fa-solid fa-money-bill-1" title="Cash"></i>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-3">Layanan Pelanggan</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                            <a href="https://wa.me/6282119796141" target="_blank" class="hover:text-emerald-400">082119796141</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-sky-400"></i>
+                            <span>Indonesia (Pengiriman Seluruh ID)</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-amber-400"></i>
+                            <span>Buka Setiap Hari: 08.00 - 21.00 WIB</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-6 text-center text-xs text-slate-500">
+                <p>&copy; 2026 Jembuy Shoes. All Rights Reserved. Guaranteed 100% Brand New Original.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ORDER MODAL (WHATSAPP DIALOG) -->
+    <div id="orderModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative">
+            <button onclick="closeOrderModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white">Formulir Pemesanan WhatsApp</h3>
+                    <p class="text-xs text-slate-400">Jembuy Shoes - WA: 082119796141</p>
+                </div>
+            </div>
+
+            <form id="orderForm" onsubmit="submitOrder(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Model Sepatu</label>
+                    <input type="text" id="modalModel" readonly class="w-full bg-slate-950 text-sky-400 font-bold border border-slate-800 rounded-xl px-4 py-2 text-sm focus:outline-none">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Harga Produk</label>
+                        <input type="text" id="modalPrice" readonly class="w-full bg-slate-950 text-slate-300 font-medium border border-slate-800 rounded-xl px-4 py-2 text-sm focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Pilih Ukuran (Ready)</label>
+                        <select id="modalSize" required class="w-full bg-slate-950 text-white border border-slate-700 rounded-xl px-4 py-2 text-sm focus:outline-none focus:border-sky-500">
+                            <!-- Populated dynamically -->
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Metode Pembayaran</label>
+                    <select id="modalPayment" class="w-full bg-slate-950 text-white border border-slate-700 rounded-xl px-4 py-2 text-sm focus:outline-none focus:border-sky-500">
+                        <option value="Cash / Bayar Tunai (COD)">Cash / Tunai / COD</option>
+                        <option value="E-Wallet DANA">E-Wallet (DANA)</option>
+                        <option value="E-Wallet OVO">E-Wallet (OVO)</option>
+                        <option value="E-Wallet GoPay">E-Wallet (GoPay)</option>
+                        <option value="E-Wallet ShopeePay / LinkAja">E-Wallet (ShopeePay / LinkAja)</option>
+                        <option value="Angsuran / Cicilan E-Wallet (PayLater)">Angsuran / Cicilan (PayLater / E-Wallet)</option>
+                        <option value="Transfer Bank BCA">Transfer Bank BCA</option>
+                        <option value="Transfer Bank BRI">Transfer Bank BRI</option>
+                        <option value="Transfer Bank BSI">Transfer Bank BSI</option>
+                        <option value="Transfer Bank Mandiri">Transfer Bank Mandiri</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Nama Pemesan</label>
+                    <input type="text" id="modalBuyerName" placeholder="Masukkan nama Anda..." required class="w-full bg-slate-950 text-white border border-slate-700 rounded-xl px-4 py-2 text-sm focus:outline-none focus:border-sky-500">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Alamat Lengkap Pengiriman</label>
+                    <textarea id="modalAddress" rows="2" placeholder="Jalan, Kota, Kecamatan, Kode Pos..." required class="w-full bg-slate-950 text-white border border-slate-700 rounded-xl px-4 py-2 text-sm focus:outline-none focus:border-sky-500"></textarea>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" class="w-full py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-bold text-sm shadow-lg shadow-emerald-500/20 transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Kirim Pesanan via WhatsApp
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Database Sepatu Branded Jembuy Shoes
+        const shoesData = [
+            {
+                id: 1,
+                brand: "Nike",
+                model: "Nike Air Max Flyknit 2026",
+                specs: "Cushioning Air Max Ultra, Upper Flyknit Breathable, Outsole Rubber Premium",
+                ukuran: "40, 41, 42, 43, 44",
+                harga: "Rp 2.450.000",
+                numericPrice: 2450000,
+                stok: 12,
+                image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+            },
+            {
+                id: 2,
+                brand: "Adidas",
+                model: "Adidas Ultraboost Light 23",
+                specs: "Boost Midsole Tech, Primeknit Upper, Continental™ Rubber Sole",
+                ukuran: "39, 40, 41, 42, 43",
+                harga: "Rp 2.800.000",
+                numericPrice: 2800000,
+                stok: 8,
+                image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=600&q=80"
+            },
+            {
+                id: 3,
+                brand: "Jordan",
+                model: "Air Jordan 1 Retro High OG",
+                specs: "Genuine Leather Upper, Encapsulated Air Unit, High-Top Classic Silhouette",
+                ukuran: "41, 42, 43, 44, 45",
+                harga: "Rp 3.250.000",
+                numericPrice: 3250000,
+                stok: 5,
+                image: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=600&q=80"
+            },
+            {
+                id: 4,
+                brand: "New Balance",
+                model: "New Balance 990v6 Made in USA",
+                specs: "FuelCell Foam Midsole, Mesh & Pigskin Suede Upper, OrthoLite Insole",
+                ukuran: "40, 41, 42, 43",
+                harga: "Rp 3.650.000",
+                numericPrice: 3650000,
+                stok: 7,
+                image: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=600&q=80"
+            },
+            {
+                id: 5,
+                brand: "Puma",
+                model: "Puma RS-X Efekt Reflective",
+                specs: "PU Midsole, Mesh Upper with Leather Overlays, Bold Chunky Design",
+                ukuran: "38, 39, 40, 41, 42",
+                harga: "Rp 1.750.000",
+                numericPrice: 1750000,
+                stok: 15,
+                image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=600&q=80"
+            },
+            {
+                id: 6,
+                brand: "Nike",
+                model: "Nike Dunk Low Retro White Black (Panda)",
+                specs: "Smooth Leather, Low-cut Padded Collar, Foam Midsole Traction Rubber",
+                ukuran: "39, 40, 41, 42, 43, 44",
+                harga: "Rp 2.100.000",
+                numericPrice: 2100000,
+                stok: 10,
+                image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80"
+            }
+        ];
+
+        let activeBrand = 'all';
+
+        // Initialize Web Application
+        window.addEventListener('DOMContentLoaded', () => {
+            renderGrid(shoesData);
+            renderTable(shoesData);
+            populateCalcSelect();
+            calculateInstallment();
+
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+
+        // Render Product Cards Grid
+        function renderGrid(products) {
+            const gridContainer = document.getElementById('productGrid');
+            gridContainer.innerHTML = '';
+
+            if (products.length === 0) {
+                gridContainer.innerHTML = `
+                    <div class="col-span-full text-center py-12 text-slate-500">
+                        <i class="fa-solid fa-box-open text-4xl mb-3"></i>
+                        <p>Sepatu yang Anda cari tidak ditemukan.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            products.forEach(shoe => {
+                const card = document.createElement('div');
+                card.className = "bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition-all flex flex-col justify-between group";
+                card.innerHTML = `
+                    <div>
+                        <div class="relative overflow-hidden h-56 bg-slate-950">
+                            <img src="${shoe.image}" alt="${shoe.model}" 
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/600x400/1e293b/38bdf8?text=${encodeURIComponent(shoe.model)}'">
+                            <span class="absolute top-3 left-3 px-3 py-1 bg-slate-950/80 backdrop-blur-md text-sky-400 text-xs font-bold rounded-lg border border-slate-800">
+                                ${shoe.brand}
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">${shoe.model}</h3>
+                            <p class="text-xs text-slate-400 mt-2 line-clamp-2">${shoe.specs}</p>
+                            
+                            <div class="mt-4 flex flex-wrap gap-1">
+                                <span class="text-[11px] text-slate-400">Ukuran:</span>
+                                <span class="text-[11px] font-semibold text-slate-200">${shoe.ukuran}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 pt-0 border-t border-slate-800/50 mt-4">
+                        <div class="flex items-center justify-between mb-4 pt-3">
+                            <div>
+                                <span class="text-[10px] text-slate-500 block uppercase">Harga Ready</span>
+                                <span class="text-lg font-extrabold text-white">${shoe.harga}</span>
+                            </div>
+                            <span class="text-xs text-emerald-400 font-semibold bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20">
+                                Stok: ${shoe.stok}
+                            </span>
+                        </div>
+
+                        <button onclick="openOrderModal('${shoe.model}', '${shoe.harga}', '${shoe.ukuran}', '${shoe.specs}')" 
+                                class="w-full py-2.5 bg-sky-600 hover:bg-sky-500 text-white rounded-xl font-bold text-xs tracking-wide transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> Order Sekarang
+                        </button>
+                    </div>
+                `;
+                gridContainer.appendChild(card);
+            });
+        }
+
+        // Render Inventory Table
+        function renderTable(products) {
+            const tableBody = document.getElementById('shoesTableBody');
+            tableBody.innerHTML = '';
+
+            products.forEach((shoe, index) => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-800/40 transition-colors";
+                tr.innerHTML = `
+                    <td class="py-4 px-6 text-slate-400 font-medium">${index + 1}</td>
+                    <td class="py-4 px-6 font-bold text-white whitespace-nowrap">${shoe.model}</td>
+                    <td class="py-4 px-6 text-slate-400 text-xs max-w-xs">${shoe.specs}</td>
+                    <td class="py-4 px-6 text-center font-medium text-sky-300 text-xs">${shoe.ukuran}</td>
+                    <td class="py-4 px-6 font-extrabold text-white whitespace-nowrap">${shoe.harga}</td>
+                    <td class="py-4 px-6 text-center">
+                        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold ${shoe.stok > 8 ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-amber-500/10 text-amber-400 border border-amber-500/20'}">
+                            ${shoe.stok} Pasang
+                        </span>
+                    </td>
+                    <td class="py-4 px-6 text-center">
+                        <button onclick="openOrderModal('${shoe.model}', '${shoe.harga}', '${shoe.ukuran}', '${shoe.specs}')" 
+                                class="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg text-xs font-bold transition-all inline-flex items-center gap-1.5 shadow-md">
+                            <i class="fa-brands fa-whatsapp"></i> Order
+                        </button>
+                    </td>
+                `;
+                tableBody.appendChild(tr);
+            });
+        }
+
+        // Filter Products by Search Text
+        function filterProducts() {
+            const searchVal = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = shoesData.filter(shoe => {
+                const matchesBrand = activeBrand === 'all' || shoe.brand.toLowerCase() === activeBrand.toLowerCase();
+                const matchesSearch = shoe.model.toLowerCase().includes(searchVal) || shoe.specs.toLowerCase().includes(searchVal);
+                return matchesBrand && matchesSearch;
+            });
+            renderGrid(filtered);
+            renderTable(filtered);
+        }
+
+        // Filter Products by Brand Button
+        function filterBrand(brand) {
+            activeBrand = brand;
+            document.querySelectorAll('.brand-filter-btn').forEach(btn => {
+                if(btn.textContent.trim().toLowerCase() === brand.toLowerCase() || (brand === 'all' && btn.textContent.trim() === 'Semua')) {
+                    btn.className = "brand-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-sky-600 text-white whitespace-nowrap";
+                } else {
+                    btn.className = "brand-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 whitespace-nowrap";
+                }
+            });
+            filterProducts();
+        }
+
+        // Populate Calculator Select Box
+        function populateCalcSelect() {
+            const select = document.getElementById('calcShoeSelect');
+            select.innerHTML = '';
+            shoesData.forEach(shoe => {
+                const opt = document.createElement('option');
+                opt.value = shoe.numericPrice;
+                opt.textContent = `${shoe.model} - ${shoe.harga}`;
+                select.appendChild(opt);
+            });
+        }
+
+        // Update Calculator Input from Select
+        function updateCalcFromSelect() {
+            const select = document.getElementById('calcShoeSelect');
+            document.getElementById('calcPriceInput').value = select.value;
+            calculateInstallment();
+        }
+
+        // Calculate Installment Amount
+        function calculateInstallment() {
+            const price = parseFloat(document.getElementById('calcPriceInput').value) || 0;
+            const tenure = parseInt(document.getElementById('calcTenure').value) || 6;
+            
+            // Flat interest rate approx 1.5% per month for calculation demo
+            const interest = 0.015;
+            const totalWithInterest = price + (price * interest * tenure);
+            const monthly = Math.round(totalWithInterest / tenure);
+
+            document.getElementById('calcMonthlyResult').textContent = `Rp ${monthly.toLocaleString('id-ID')}`;
+        }
+
+        // Order Installment direct via WA
+        function orderWithInstallment() {
+            const select = document.getElementById('calcShoeSelect');
+            const shoeName = select.options[select.selectedIndex].text;
+            const price = document.getElementById('calcPriceInput').value;
+            const tenure = document.getElementById('calcTenure').value;
+            const monthly = document.getElementById('calcMonthlyResult').textContent;
+
+            const message = `Halo Jembuy Shoes, saya berminat mengajukan Angsuran/Cicilan:\n\n` +
+                            `👟 Produk: ${shoeName}\n` +
+                            `🗓️ Tenor: ${tenure} Bulan\n` +
+                            `💵 Estimasi Cicilan: ${monthly}/bulan\n\n` +
+                            `Mohon petunjuk prosedur pengajuannya via E-Wallet/Bank. Terima kasih!`;
+
+            window.open(`https://wa.me/6282119796141?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        // Order Modal Functions
+        function openOrderModal(model, price, sizeStr, specs) {
+            document.getElementById('modalModel').value = model;
+            document.getElementById('modalPrice').value = price;
+            
+            // Populate Size Dropdown
+            const sizeSelect = document.getElementById('modalSize');
+            sizeSelect.innerHTML = '';
+            const sizes = sizeStr.split(',').map(s => s.trim());
+            sizes.forEach(s => {
+                const opt = document.createElement('option');
+                opt.value = s;
+                opt.textContent = `EU Size ${s}`;
+                sizeSelect.appendChild(opt);
+            });
+
+            document.getElementById('orderModal').classList.remove('hidden');
+        }
+
+        function closeOrderModal() {
+            document.getElementById('orderModal').classList.add('hidden');
+        }
+
+        // Submit WhatsApp Order Form
+        function submitOrder(e) {
+            e.preventDefault();
+            const model = document.getElementById('modalModel').value;
+            const price = document.getElementById('modalPrice').value;
+            const size = document.getElementById('modalSize').value;
+            const payment = document.getElementById('modalPayment').value;
+            const name = document.getElementById('modalBuyerName').value;
+            const address = document.getElementById('modalAddress').value;
+
+            const text = `*FORMULIR PEMESANAN JEMBUY SHOES*\n` +
+                         `------------------------------------\n` +
+                         `👟 *Model Sepatu:* ${model}\n` +
+                         `📏 *Ukuran:* EU ${size}\n` +
+                         `💰 *Harga:* ${price}\n` +
+                         `💳 *Metode Bayar:* ${payment}\n\n` +
+                         `👤 *Nama Pembeli:* ${name}\n` +
+                         `📍 *Alamat Pengiriman:* ${address}\n` +
+                         `------------------------------------\n` +
+                         `Mohon diproses pesanan saya. Terima kasih!`;
+
+            const waUrl = `https://wa.me/6282119796141?text=${encodeURIComponent(text)}`;
+            window.open(waUrl, '_blank');
+            closeOrderModal();
+        }
+    </script>
+</body>
+</html>
